@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "scripts": {
+    "start": "node server/index.ts",
+    "dev": "concurrently \"npm start backend\" \"npm run start --prefix client\""
+  }
+}
